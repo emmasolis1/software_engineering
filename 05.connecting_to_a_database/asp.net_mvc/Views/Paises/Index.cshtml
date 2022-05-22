@@ -1,0 +1,27 @@
+﻿@model List<lab05.Models.PaisesModel>;
+
+<h1>@ViewBag.MainTittle</h1>
+
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre del Pais</th>
+        <th>Idioma</th>
+        <th>Continente al que pertenece</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @foreach (var item in Model) {
+        <tr>
+          <td>@item.Id</td>
+          <td>@item.Nombre</td>
+          <td>@item.Idioma</td>
+          <td>@item.Continente</td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,32 @@
+﻿@{
+  ViewBag.Title = "My first view";
+  String author_name = "Emmanuel D. Solis";
+  int grade = 100;
+}
+
+<html>
+  <head>
+    <title> @ViewBag.Title </title>
+  </head>
+  <body>
+    <div>
+      <h1> My first view, oh yeah! </h1>
+      <h2> Hello World! </h2>
+      <p>
+        <strong>My name is:</strong> @author_name <br />
+        My grade as far as today is: <input type="number" value="@grade" placeholder="Type in your grade" />
+      </p>
+      <hr />
+    </div>
+
+    <div>
+      <label>Textbox</label>
+      <input type="text" placeholder="Type in anything."/>
+      <hr/>
+    </div>
+
+    <div>
+      <a class="btn btn-info" href="./Index">Return to main page</a><br/>
+    </div>
+  </body>
+</html>

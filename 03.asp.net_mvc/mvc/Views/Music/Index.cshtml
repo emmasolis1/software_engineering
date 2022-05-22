@@ -1,0 +1,16 @@
+﻿@model lab03.Models.MusicModel;
+@{
+  ViewData["Title"] = "Music";
+}
+
+<h1>@ViewBag.main_title</h1>
+
+<div>
+  <h3>Song Information</h3>
+  <p>Name: @Model.name</p>
+  <p>Release Date: @Model.release_date</p>
+  <p>Language: @Model.language</p>
+  <p>Genre: @Model.genre</p>
+  <p>Number of Likes: @Model.number_likes</p>
+  <p>Category: @Model.category</p>
+</div>
