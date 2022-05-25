@@ -1,0 +1,39 @@
+﻿@model List<lab05.Models.PaisesModel>;
+@{
+  ViewData["Title"] = "Paises";
+}
+
+
+<h1>@ViewBag.MainTitle</h1>
+
+<div>
+  <a href="@Url.Action("CrearPais", "Paises")" class = "btn btn-success" > Crear pais </a>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Nombre</th>
+        <th>Idioma</th>
+        <th>Continente</th>
+        <th>Editar</th>
+        <th>Borrar</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      @foreach (var item in Model) {
+        <tr>
+          <td>@item.Id</td>
+          <td>@item.Nombre</td>
+          <td>@item.Idioma</td>
+          <td>@item.Continente</td>
+          <td>@Html.ActionLink("Editar", "EditarPais", new {identificador = @item.Id},
+          new {@class = "btn btn alert-info", @onclick = "return confirm('Desea editar este pais?');"})</td>
+          <td>@Html.ActionLink("Borrar", "BorrarPais", new {identificador = @item.Id},
+          new {@class = "btn btn alert-danger", @onclick = "return confirm('Seguro que desea borrar este pais?');"})</td>
+        </tr>
+      }
+    </tbody>
+
+  </table>
+</div>
