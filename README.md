@@ -12,7 +12,6 @@ Laboratories and projects from my university course Software Engineering
 - Software Testing (Component, Integration, Unit, and UI)
 - System Modeling
 - UML Diagrams
-
 - Projects Administration
 - Web Forms
 
