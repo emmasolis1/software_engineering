@@ -2,16 +2,17 @@
 Laboratories and projects from my university course Software Engineering
 
 ## What I learned:
-- Scrum
+- Clean Code
+- Code Refactoring
+- Design Patterns (including MVC)
+- DevOps
 - Requirements Engineering
+- Scrum
+- Software Architecture
+- Software Testing (Component, Integration, Unit, and UI)
 - System Modeling
 - UML Diagrams
-- Clean Code
-- Software Architecture
-- Design Patterns (including MVC)
-- Code Refactoring
-- Software Testing (Component, Integration, Unit, and UI)
-- DevOps
+
 - Projects Administration
 - Web Forms
 
